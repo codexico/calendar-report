@@ -18,20 +18,35 @@
 // monthly report
 // spreadsheet
 // recipient in another place  ✔
-// github
+// doc optional ✔
+// github ✔
 // i18n
 
 // MAYBE:
 // html email
 
+
+
 var config = {
-  docId: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+  // google drive document
+  // just one simple line with recipientes separated by commas (,)
+  // Ex: asdf@asdf.com, example@example.com
+  // or leave it blank and use config.recipient
+  doc_id: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+  recipient: ''
 };
 var today = new Date();
 var email = Session.getActiveUser().getEmail();
 var calendar = getCalendar();
-var doc = DocumentApp.openById(config.docId);
-var recipient = doc.getBody().getText();
+var recipient = config.recipient;
+var doc = {};
+
+if (config.doc_id) {
+  doc = DocumentApp.openById(config.doc_id);
+  recipient = doc.getBody().getText();
+}
+
+
 
 function test() {}
 
