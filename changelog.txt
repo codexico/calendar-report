@@ -1,0 +1,5 @@
+20131030 - 1.0 get events and send email
+20131031 - 1.0.1 totalDuration
+20131101 - 1.1 recipient in another doc
+20131103 - 1.1.1 dont send empty emails, date on subject
+20140116 - 1.2 doc optional, github

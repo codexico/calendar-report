@@ -1,0 +1,12 @@
+TODO:
+totalDuration ✔
+weekly report
+monthly report
+spreadsheet
+recipient in another place  ✔
+doc optional ✔
+github ✔
+i18n
+
+MAYBE:
+html email

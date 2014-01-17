@@ -5,27 +5,7 @@
 * use just one simple line with recipientes separated by commas (,)
 * Ex: asdf@asdf.com, example@example.com
 *
-* 20131030 - 1.0 get events and send email
-* 20131031 - 1.0.1 totalDuration
-* 20131101 - 1.1 recipient in another doc
-* 20131103 - 1.1.1 dont send empty emails, date on subject
-*
 */
-
-// TODO:
-// totalDuration ✔
-// weekly report
-// monthly report
-// spreadsheet
-// recipient in another place  ✔
-// doc optional ✔
-// github ✔
-// i18n
-
-// MAYBE:
-// html email
-
-
 
 var config = {
   // google drive document
